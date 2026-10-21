@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Registro de usarios </title>
+</head>
+<body>
+
+<h1>Registro de Usuarios</h1>
+
+<form>
+<fieldset>
+<legend>Datos del usuario</legend>
+
+<label>Nombre completo:</label><br>
+<input type="text" required><br><br>
+
+<label>Correo electronico:</label><br>
+<input type="email" required placeholder="solo gmail" pattern=".*@gmail.com"><br><br>
+
+<label>Edad:</label><br>
+<input type="number" min="18" required><br><br>
+
+<label>Fecha de nacimiento:</label><br>
+<input type="date" required><br><br>
+
+<label>Pais:</label><br>
+<select required>
+<option value="">Seleccione</option>
+<option>Colombia</option>
+<option>Chile</option>
+<option>Mexico</option>
+<option>Panama</option>
+</select><br><br>
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Comentarios</legend>
+
+<textarea maxlength="300" cols="3" rows="5" placeholder="maximo 300 caracteres"></textarea>
+
+</fieldset>
+
+<br>
+
+<input type="reset" value="Reset">
+<input type="submit" value="Enviar">
+
+</form>
+
+</body>
+</html>
